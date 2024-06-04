@@ -1,0 +1,120 @@
+:root{
+    --main-pink: #F5CCE8;
+    --main-blue: #759EB8;
+    --main-magenta: #C880B7;
+    --main-jet:#484349;
+    --main-violet:#4A2040;
+    --main-sky:#087CA7;
+
+}
+body{
+    font-family:mulish;
+    background-color: var(--main-violet);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top:100px;
+    color: aliceblue;
+    cursor:default;
+}
+#creator{
+    color:#C880B7;
+    transition: transform 0.2s ease;
+}
+h1{
+    color:burlywood;
+}
+#texbox{
+    padding: 30px;
+    margin-bottom:60px;
+    margin-top:20px;
+    background-color: var(--main-pink);
+    color: var(--main-jet);
+    font-size:19px;
+    text-align: center;
+    display: flex;
+    justify-content:space-around;
+    row-gap:20px;
+    align-items:center;
+    flex-direction: column;   
+    border-radius:20px;
+    box-shadow: 9.0px 8.9px 20px hsl(277, 52%, 37%);  
+}
+#text-input{
+    font-size: 20px;
+    border:none;
+    background-color: #F5CCE8;
+    border-bottom:2px solid;
+    border-color: var(--main-sky);
+    transition: transform 0.3s ease;
+    text-align:center;
+}
+button{
+    background-color: #087CA7;
+    border:none;
+    padding:10px 20px;
+    color:azure;
+    border-radius:30px;
+    margin-left:14px;
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+
+}
+#text-input:hover{
+    transform:translateY(8px);
+}
+input[type="text"] {
+    border: none;
+    outline: none;
+}
+.result{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding-top:20px;
+    margin-left:none;
+    font-size: x-large;
+    color: var(--main-violet);
+    white-space: wrap;
+}
+.inp{
+    font-weight: bold;
+}
+#def{
+    width:400px;
+    background-color: var(--main-jet);
+    color: antiquewhite;
+    padding:30px;
+    border-radius:80px;
+    text-align:justify;
+}
+button:hover{
+    transform: scale(1.1, 1.1);
+}
+#creator:hover{
+    transform: rotateY(-180deg);
+    
+}
+
+.pal:hover {
+    transform: rotateY(180deg);
+    color:red;
+
+}
+.pal{
+    transition: transform 0.15s ease;
+    transition: color 0.1s ease-in;
+}
+@media(min-width=800px){
+    body{
+        font-size: 1000%;
+
+
+    }
+}
+
+
+
+
+
